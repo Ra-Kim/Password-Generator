@@ -111,11 +111,6 @@ function passwordGen(x) {
     return characters[secondRandom];
   }
 }
-function getId(btn) {
-  let elementID = btn;
-  console.log(elementID);
-  return String(elementID);
-}
 
 function copyToClipBoard(id) {
   // Create a "hidden" input
@@ -123,84 +118,6 @@ function copyToClipBoard(id) {
 
   // Assign it the value of the specified element
   aux.setAttribute("value", id.innerHTML);
-
-  // Append it to the body
-  document.body.appendChild(aux);
-
-  // Highlight its content
-  aux.select();
-
-  // Copy the highlighted text
-  document.execCommand("copy");
-
-  // Remove it from the body
-  document.body.removeChild(aux);
-}
-
-function copyToClipboard1() {
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-
-  // Assign it the value of the specified element
-  aux.setAttribute("value", passwordDisplay1.innerHTML);
-
-  // Append it to the body
-  document.body.appendChild(aux);
-
-  // Highlight its content
-  aux.select();
-
-  // Copy the highlighted text
-  document.execCommand("copy");
-
-  // Remove it from the body
-  document.body.removeChild(aux);
-}
-function copyToClipboard2() {
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-
-  // Assign it the value of the specified element
-  aux.setAttribute("value", passwordDisplay2.innerHTML);
-
-  // Append it to the body
-  document.body.appendChild(aux);
-
-  // Highlight its content
-  aux.select();
-
-  // Copy the highlighted text
-  document.execCommand("copy");
-
-  // Remove it from the body
-  document.body.removeChild(aux);
-}
-
-function copyToClipboard3() {
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-
-  // Assign it the value of the specified element
-  aux.setAttribute("value", passwordDisplay3.innerHTML);
-
-  // Append it to the body
-  document.body.appendChild(aux);
-
-  // Highlight its content
-  aux.select();
-
-  // Copy the highlighted text
-  document.execCommand("copy");
-
-  // Remove it from the body
-  document.body.removeChild(aux);
-}
-function copyToClipboard4() {
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-
-  // Assign it the value of the specified element
-  aux.setAttribute("value", passwordDisplay4.innerHTML);
 
   // Append it to the body
   document.body.appendChild(aux);
