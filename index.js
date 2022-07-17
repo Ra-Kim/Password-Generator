@@ -70,23 +70,23 @@ const characters = ["!", "@", "#", "$", "%", "&", "*", "(", ")"];
 function displayPasswords() {
   for (let i = 0; i < passwordArray.length; i++) {
     passwordArray[i].textContent = "";
-    passwordArray[i].textContent += loop();
+    passwordArray[i].textContent += generate();
     str = "";
     passwordArray[i].style.color = "#55F991";
     passwordArray[i].style.fontSize = "medium";
   }
 }
 
-function generatePassword() {
+function generatePasswordChar() {
   for (let i = 0; i < 12; i++) {
     passwordChars = passwordGen(randomGen());
   }
   return passwordChars;
 }
 
-function loop() {
+function generate() {
   for (let i = 0; i < 12; i++) {
-    str += generatePassword();
+    str += generatePasswordChar();
   }
   return str;
 }
